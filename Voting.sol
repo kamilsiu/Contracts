@@ -13,8 +13,9 @@ contract Voting{
     event VoteCast(address indexed vote,uint256 candidateId);
     Candidate[] public candidates;
     constructor(){
-        candidates.push(Candidate("Kamil",0));
-        candidates.push(Candidate("Massil",1));
+        
+        candidates.push(Candidate("Kamil",0)); 
+        candidates.push(Candidate("Massil",0));
         
     }
     function vote(uint256 _candidateId)public {
