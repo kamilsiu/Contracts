@@ -42,5 +42,6 @@ contract Voting{
         for(uint256 i = 0;i<candidates.length;i++){
             total+=candidates[i].voteCount;
         }
+        return total;
     }
 }
