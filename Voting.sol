@@ -21,7 +21,7 @@ contract Voting{
         require(!voters[msg.sender].hasVoted,"Already Voted");
         _;
     }
-    function vote(uint256 _candidateId)public {
+    function vote(uint256 _candidateId)public hasVoted {
         require(_candidateId < candidates.length,"Invalid Candidate");
         voters[msg.sender].hasVoted = true;
         voters[msg.sender].candidateId = _candidateId;
