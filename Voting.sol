@@ -17,11 +17,11 @@ contract Voting{
         candidates.push(Candidate("Kamil",0));
         candidates.push(Candidate("Mahroosh",0));
     }
-    modifier hasvoted(){
+    modifier hasnotvoted(){
         require(!voters[msg.sender].hasVoted,"Already Voted");
         _;
     }
-    function vote(uint256 _candidateId)public hasVoted {
+    function vote(uint256 _candidateId)public hasnotVoted {
         require(_candidateId < candidates.length,"Invalid Candidate");
         voters[msg.sender].hasVoted = true;
         voters[msg.sender].candidateId = _candidateId;
