@@ -1,5 +1,5 @@
 ## Counter Smart Contract
-
+ 
 ## Description:
 
 This Solidity smart contract allows users to maintain a personalized counter. Each user can:
