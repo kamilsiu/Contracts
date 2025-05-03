@@ -1,6 +1,6 @@
-Counter Smart Contract
+## Counter Smart Contract
 
-Description:
+## Description:
 
 This Solidity smart contract allows users to maintain a personalized counter. Each user can:
 
@@ -18,7 +18,7 @@ Maintain a personal counter for each user
  Deployment
 To deploy this contract, you can use Remix IDE or Hardhat.
 
-Deploy with Remix
+## Deploy with Remix
 Open Remix IDE.
 Copy and paste the contract into a new file.
 Compile using Solidity 0.8.0 or later.
